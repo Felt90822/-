@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        {% set CH = CH | int %}
+        {% set EN = EN | int %}
+        {% set M = M | int %}
+        {% set C = C | int %}
+        {% set PY = PY | int %}
+        {% set S = S | int %}
+        {% set H = H | int %}
+        {% set G = G | int %}
+        {% set L = L | int %}
+        {%set ALL = CH*4+EN*4+M*4+C*2+PY*2+S*2+H*2+L*2+G*2 |int %}
+
+        <p>加權後分數: {{ ALL }}</p>
+    </body>
+</html>
