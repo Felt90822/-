@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>二進位轉十進位</title>
+</head>
+<body>
+    <h1>二進位轉十進位</h1>
+	<form action="{{url_for('TransForm_return')}}" method="POST">
+        <fieldset>
+            <label>請輸入二進位數字</label>
+            <input type="text" size="10" name="num">
+        </fieldset>
+	<br/>
+	<input type="submit" value="送出">
+	<input type="reset" value="清空">
+    <a href="home">回首頁</a>
+	</form>
+</body>
+</html>
