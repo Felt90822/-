@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>計算成績</title>
+    </head>
+    <body>
+        <h1>計算你加權成績</h1>
+        <form action="{{url_for('calaulate_return')}}" method="POST">
+            <fieldset>
+                <legend>成績輸入處</legend>
+                <label>國文: </label>
+                <input type="text" name="CH" size="40">
+                <br/>
+                <label>英文: </label>
+                <input type="text" name="EN" size="40">
+                <br/>
+                <label>數學: </label>
+                <input type="text" name="M" size="40">
+                <br/>
+                <label>化學: </label>
+                <input type="text" name="C" size="40">
+                <br/>
+                <label>生物: </label>
+                <input type="text" name="L" size="40">
+                <br/>
+                <label>物理: </label>
+                <input type="text" name="PY" size="40">
+                <br/>
+                <label>公民: </label>
+                <input type="text" name="S" size="40">
+                <br/>
+                <label>歷史: </label>
+                <input type="text" name="H" size="40">
+                <br/>
+                <label>地理: </label>
+                <input type="text" name="G" size="40">
+                <br/>
+
+            </fieldset>
+
+            <input type="submit" value="送出">
+            <input type="reset" value="清除">
+            <a href="home">回首頁</a>
+        </form>
+
+    </body>
+</html>
