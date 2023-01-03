@@ -3,8 +3,9 @@
     <head>
         <meta charset="UTF-8"/>
         <title>計算成績</title>
+        <link href="{{ url_for('static', filename='web_style.css')}}" rel="stylesheet" type="text/css" />
     </head>
-    <body>
+    <body class="backGround">
         <h1>計算你加權成績</h1>
         <form action="{{url_for('calaulate_return')}}" method="POST">
             <fieldset>
