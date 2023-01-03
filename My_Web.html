@@ -3,38 +3,39 @@
     <head>
         <meta charset="utf-8"/>
         <title>學期末作業</title>
+        <link href="{{ url_for('static', filename='web_style.css')}}" rel="stylesheet" type="text/css" />
     </head>
-    <body background="{{ url_for('static', filename='我是背景.png') }}">
-        <h1 style="background-color: rgb(0, 128, 255);">
-            自我介紹
-        </h1>
+    <body class="backGround">
+            <h1 style="background-color: rgb(0, 128, 255);">
+                自我介紹
+            </h1>
+            
+            <table border="2" style="border-color: rgb(0, 0, 0);" align="center">
+                <tr>
+                    <td colspan="2" rowspan="3" ><img src="https://tse4.explicit.bing.net/th?id=OIP.5WuNdy99HshgNwX49vHZjwHaE6&pid=Api&P=0" width="200"/></td>
+                    <td width="50" height="50">班級</td>
+                    <td width="90" height="50" style="color:rgb(0, 118, 10);">205</td>
+                </tr>
+                <tr>
+                    <td>座號</td>
+                    <td style="color:rgb(0, 118, 10) ;">31</td>
+                </tr>
+                <tr>
+                    <td>名字</td>
+                    <td style="color:rgb(209, 0, 160) ;">阿螈</td>
+                </tr>
+                <tr>
+                    <td rowspan="3" width="80" height="200">連結</td>
+                    <td colspan="3"><a href="https://youtu.be/dQw4w9WgXcQ">永遠不放棄</a></td>
+                </tr>
+                <tr>
+                    <td colspan="3"><a href="Page3">計算成績</a></td>
+                </tr>
+                <tr>
+                    <td colspan="3"><a href="TF">二進位轉換</a></td>
+                </tr>
+            </table>
         
-        <table border="2" style="border-color: rgb(0, 0, 0);" align="center">
-            <tr>
-                <td colspan="2" rowspan="3" ><img src="https://tse4.explicit.bing.net/th?id=OIP.5WuNdy99HshgNwX49vHZjwHaE6&pid=Api&P=0" width="260"/></td>
-                <td width="50" height="50">班級</td>
-                <td width="90" height="50" style="color:rgb(0, 118, 10);">205</td>
-            </tr>
-            <tr>
-                <td>座號</td>
-                <td style="color:rgb(0, 118, 10) ;">31</td>
-            </tr>
-            <tr>
-                <td>名字</td>
-                <td style="color:rgb(209, 0, 160) ;">阿螈</td>
-            </tr>
-            <tr>
-                <td rowspan="3" width="80" height="200">連結</td>
-                <td colspan="3"><a href="https://youtu.be/dQw4w9WgXcQ">永遠不放棄</a></td>
-            </tr>
-            <tr>
-                <td colspan="3"><a href="Page3">計算成績</a></td>
-            </tr>
-            <tr>
-                <td colspan="3"><a href="TF">二進位轉換</a></td>
-            </tr>
-        </table>
-
     </body>
 
 </html>
