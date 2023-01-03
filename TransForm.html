@@ -3,8 +3,9 @@
 <head>
 	<meta charset="utf-8">
 	<title>二進位轉十進位</title>
+	<link href="{{ url_for('static', filename='web_style.css')}}" rel="stylesheet" type="text/css" />
 </head>
-<body>
+<body class="backGround">
     <h1>二進位轉十進位</h1>
 	<form action="{{url_for('TransForm_return')}}" method="POST">
         <fieldset>
