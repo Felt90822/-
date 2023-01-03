@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html>
-    <body>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>加權成績計算</title>
+        <link href="{{ url_for('static', filename='web_style.css')}}" rel="stylesheet" type="text/css" />
+    </head>
+    <body class="backGround">
         {% set CH = CH | int %}
         {% set EN = EN | int %}
         {% set M = M | int %}
