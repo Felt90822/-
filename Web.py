@@ -55,7 +55,15 @@ def TransForm_return():
             i = i+1
     
     return render_template("TransForm_return.html", num=sum)
-    
+
+@app.route("/IF")
+def weather():
+    return render_template("weather.html")
+
+@app.route("/weather_return", methods=['POST'])
+def weather_return():
+    return render_template("weather_return.html")
 
 if __name__ == "__main__":
     app.run(debug=True)
+
