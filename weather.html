@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+        <title>看天氣決定做什麼事</title>
+        <link href="{{ url_for('static', filename='web_style.css')}}" rel="stylesheet" type="text/css" />
+	</head>
+
+	<body class="backGround">
+		<h1 align="center">請輸入今天的天氣</h1>
+		<form action="{{url_for('weather_return')}}" method="POST">
+			<table border="2" style="border-color: rgb(0, 0, 0);" align="center">
+				<td>
+					<input type=radio name=count value=1><font size="5">晴天☀</font>
+					<input type=radio name=count value=2><font size="5">陰天☁</font>
+					<input type=radio name=count value=3><font size="5">雨天🌧</font>
+				</td>
+		</form>
+	</body>
+</html>
