@@ -7,13 +7,18 @@
 	</head>
 
 	<body class="backGround">
+        {% set A = A | int %}
 		<h1 align="center">請輸入今天的天氣</h1>
 		<form action="{{url_for('weather_return')}}" method="POST">
 			<table border="2" style="border-color: rgb(0, 0, 0);" align="center">
 				<td>
-					<input type=radio name=count value=1><font size="5">晴天☀</font>
-					<input type=radio name=count value=2><font size="5">陰天☁</font>
-					<input type=radio name=count value=3><font size="5">雨天🌧</font>
+                    {% if A<=3 %}
+                        <p>今天適合出去玩</p>
+                    {% elif A>=3 and A<=5%}
+                        <p>今天適合在家看電視</p>
+                    {% else %}
+                        <p>今天或許在家睡覺就好了</p>
+                    {% endif %}
 				</td>
 		</form>
 	</body>
