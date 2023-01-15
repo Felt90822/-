@@ -10,11 +10,27 @@
 		<h1 align="center">請輸入今天的天氣</h1>
 		<form action="{{url_for('weather_return')}}" method="POST">
 			<table border="2" style="border-color: rgb(0, 0, 0);" align="center">
+                <tr>
 				<td>
-					<input type=radio name=count value=1><font size="5">晴天☀</font>
-					<input type=radio name=count value=2><font size="5">陰天☁</font>
-					<input type=radio name=count value=3><font size="5">雨天🌧</font>
+					<input type=radio name=weather value=1><font size="5">晴天☀</font>
+					<input type=radio name=weather value=2><font size="5">陰天☁</font>
+					<input type=radio name=weather value=3><font size="5">雨天🌧</font>
 				</td>
+                </tr>
+                <tr>
+                <td>
+					<input type=radio name=feeling value=1><font size="5">開心</font>
+					<input type=radio name=feeling value=2><font size="5">難過</font>
+					<input type=radio name=feeling value=3><font size="5">生氣</font>
+				</td>
+                </tr>
+                <tr>
+                <td>
+                <input type="submit" value="送出">
+	            <input type="reset" value="清空">
+                <a href="home">回首頁</a>
+                </td>
+                </tr>
 		</form>
 	</body>
 </html>
