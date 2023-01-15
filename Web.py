@@ -25,6 +25,10 @@ def TrnansForm():
 def page3():
     return render_template("calculate.html")
 
+@app.route("/IF")
+def weather():
+    return render_template("weather.html")
+
 @app.route("/calculate_return", methods=['POST'])
 def calaulate_return():
     CH = request.form['CH']
@@ -56,13 +60,12 @@ def TransForm_return():
     
     return render_template("TransForm_return.html", num=sum)
 
-@app.route("/IF")
-def weather():
-    return render_template("weather.html")
-
 @app.route("/weather_return", methods=['POST'])
 def weather_return():
-    return render_template("weather_return.html")
+    weather = int(request.form['weather'])
+    feeling = int(request.form['feeling'])
+    ans = feeling + weather
+    return render_template("weather_return.html", A=ans)
 
 if __name__ == "__main__":
     app.run(debug=True)
